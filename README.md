@@ -28,6 +28,6 @@ Run: php artisan test
 
 ## Console application
 
-Run: php artisan run:demo_app.<br>
+Run: php artisan run:demo_app<br>
 PS. On login/registration password is hidden, so (probably) you will not see any characters
 
