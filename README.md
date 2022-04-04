@@ -3,7 +3,7 @@
 Demo application - Structured to handle more games, but only Word Game is configured.
 
 ## Requirements
-php8
+php: 8.0+
 
 ## Follow next steps to start application
 1. clone it
