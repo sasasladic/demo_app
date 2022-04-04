@@ -6,10 +6,10 @@ Demo application - Structured to handle more games, but only Word Game is config
 php: 8.0+
 
 ## Follow next steps to start application
-1. clone it
-2. copy .env.example into .env (in root of project)
-3. Make database (example: demo_app)
-4. edit DB_* connection variables in .env
+1. Clone it
+2. Copy .env.example into .env (in root of project)
+3. Create database (example: demo_app)
+4. Edit DB_* connection variables in .env
 5. In project root (terminal) run next commands: 
    1. composer install
    2. php artisan migrate --seed
