@@ -12,11 +12,11 @@ php: 8.0+
 4. edit DB_* connection variables in .env
 5. In project root (terminal) run next commands: 
    1. composer install
-   2. php artisan migrate
-   3. php artisan db:seed
-   4. php artisan passport:install
+   2. php artisan migrate --seed
+   3. php artisan passport:install
+   4. php artisan key:generate
    5. php artisan optimize:clear
-   6. php artisan serve or point virtualHost to public/index.php
+   6. php artisan serve (alternative: point virtualHost to public/index.php)
 7. optional: if you're using virtualHost change APP_URL in .env
 
 ## Test Login Credentials

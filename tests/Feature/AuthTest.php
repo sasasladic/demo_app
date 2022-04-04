@@ -43,7 +43,7 @@ class AuthTest extends TestCase
     public function test_login()
     {
         $response = $this->post('api/login', [
-            'email' => 'sasa96.sladic@gmail.com',
+            'email' => 'test@test.com',
             'password' => 'test123',
         ]);
 
