@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 use Tests\TestCase;
 
 class AuthTest extends TestCase
@@ -42,9 +43,18 @@ class AuthTest extends TestCase
      */
     public function test_login()
     {
+        $user = User::create(
+            [
+                'name' => $this->faker->name,
+                'email' => $this->faker->email,
+                'password' => Hash::make('testing123'),
+                'password_confirmation' => Hash::make('testing123')
+            ]
+        );
+
         $response = $this->post('api/login', [
-            'email' => 'test@test.com',
-            'password' => 'test123',
+            'email' => $user->email,
+            'password' => 'testing123',
         ]);
 
         $response->assertStatus(200);
