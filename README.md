@@ -23,6 +23,8 @@ php: 8.0+
 email: test@test.com
 pass: test123
 
+## Feature/Unit Tests
+run: php artisan test
 
 ## Console application
 
