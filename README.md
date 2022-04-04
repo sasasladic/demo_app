@@ -24,7 +24,7 @@ email: test@test.com
 pass: test123
 
 
-## For testing console application
+## Console application
 
 In the root of project run: php artisan run:demo_app.<br>
 PS. On login/registration password is hidden, so (probably) you will not see any characters
